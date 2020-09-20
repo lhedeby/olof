@@ -1,3 +1,4 @@
+
 const renderer = new Renderer();
 const state = new Gamestate();
 

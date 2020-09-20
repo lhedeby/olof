@@ -7,8 +7,10 @@ class Renderer {
     }
 
     renderBG() {
-        this.ctx.fillStyle = "black";
+        this.ctx.fillStyle = "green";
         this.ctx.fillRect(0,0,this.width, this.height);
+        this.ctx.fillStyle = "white";
+        this.ctx.fillRect(this.width / 2 - 2, 0, 4, this.height);
     }
 
     renderState(state) {
