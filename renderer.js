@@ -11,6 +11,14 @@ class Renderer {
         this.ctx.fillRect(0,0,this.width, this.height);
         this.ctx.fillStyle = "white";
         this.ctx.fillRect(this.width / 2 - 2, 0, 4, this.height);
+        this.ctx.strokeStyle = "white";
+        this.ctx.lineWidth = "3";
+        this.ctx.beginPath();
+        this.ctx.rect(0, this.height / 2 - 40, 40, 80);
+        this.ctx.stroke();
+        this.ctx.beginPath();
+        this.ctx.rect(this.width - 40, this.height / 2 - 40, 40, 80);
+        this.ctx.stroke();
     }
 
     renderState(state) {
